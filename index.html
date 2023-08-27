@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d833990a74.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="toggler-menu">
+            <button id="toggler-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="wrapper-menu">
+            <div class="search-input">
+                <form action="">
+                    <input type="text" name="search-input" id="" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="menu">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-user-group"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-message"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-bell"></i></a></li>
+                    </ul>
+                </div>
+                <div class="side-menu">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-list-ul"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-video"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+</body>
+
+</html>
+<script>
+
+    const togglerMenuBtn = document.getElementById('toggler-menu-btn');
+    const wrapperMenu = document.querySelector('.wrapper-menu');
+    console.log(wrapperMenu);
+    togglerMenuBtn.addEventListener('click', (event) => {
+        wrapperMenu.classList.toggle('wrapper-menu-active');
+    });
+
+
+</script>
